@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+            justify-content:space-between ;
+            width: 100%;
+            display: flex;
+            width: 100%;
+            height: 70px;
+            align-items: center;
+           
+        }
+        .princ-1{
+            display: flex;
+            align-items: center;
+            width: 900px;
+        }
+        .Elem-1{
+           flex: 2;
+            
+        }
+        .img{
+            width: 60px;
+            height: 60px;
+        }
+        .mg-text{
+            display: flex;
+            text-align: center;
+            align-items: center;
+        }
+        .img-1{
+            width: 100%;
+        }
+        .img-2{
+            width: 16px;
+            height: 16px;
+            margin-right: 7px;
+        }
+        .mg-2{
+            width: 100%;
+        }
+        .img-text-1{
+            display: flex;
+             flex: 1;
+             width: 50px;
+             border-radius: 8px;
+             justify-content:center;
+             align-items: center;
+             margin-right: 10px;
+             height: 30px;
+        }
+        .img-text-1:hover{
+           background-color: rgb(82, 82, 241);
+
+        }
+        .ic-recherche{
+            width: 20px;
+            height: 20px; 
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .icon{
+            width: 100%;
+            
+        }
+        .prof-2{
+            width: 50px;
+            height: 50px;
+        }
+        .prof-1{
+            width: 100%;
+        }
+        .Elem-2{
+            display: flex;
+            width: 650px;
+            height: 40px;
+            align-items: center;
+            
+        }
+        
+        .princ-2{
+           display: flex;
+           margin-right: 10px;
+          
+        }
+        .inp-1{
+            border-style: none; 
+            width: 150px;
+            background-color: transparent;
+            
+        }
+        .Inp{
+            background-color: rgb(216, 231, 248);
+            width: 235px;
+            height: 40px;
+            display: flex;
+            border-radius: 25px;
+            align-items: center;
+            border-style: none;
+            
+            
+        }
+        .selec-1{
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+            
+        }
+        .select-2{
+            border-style: none;
+            color: rgb(3, 20, 32);
+        }
+        .text-color{
+             color: rgb(9, 29, 43);
+        }
+        .text-color:hover{
+            color: white;
+        }
+        .coul-moncole{
+            color: rgb(9, 29, 43);
+            font-size: 20px;
+        }
+        .princ-3{
+            height: 200px;
+            width: 100%;
+            background-image: url(https://www.winonastateu.com/wp-content/uploads/2025/08/Comment-les-ecoles-integrent-deja-lIA-dans-les-programmes-scolaires.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:cover;
+            text-align: center;
+            align-items: center;
+            
+        }
+        .Texte{
+            color: white;
+            font-size: 35px;
+            margin-left: 50px;
+        }
+        .Elem-4{
+            width: 550px;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .texte-1{
+            color: white;
+        }
+        .ic-1{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+        }
+        .ic-2{
+            width: 100%;
+            
+        }
+        .Bout-1{
+            display: flex;
+            border-style: solid;
+            border-color:  rgb(61, 61, 243);
+            background-color: rgb(221, 227, 255);
+            width: 240px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            margin-left: 20%;
+        }
+        .Bouton{
+            border-style: none;
+            background-color: transparent;
+        }
+        .img-3{
+            width: 40px;
+            height: 40px;
+            margin-right: 4px;
+        }
+        .img-book{
+            width: 100%;
+        }
+        .flex-img-text{
+            display: flex;
+            align-items: center;
+        }
+        .text{
+            display: flex;
+        }
+        .color-text-2{
+            color: rgb(2, 58, 107);
+        }
+        .color-text{
+            font-size: 20px;
+             color: rgb(2, 22, 39);
+        }
+        .img-text-3{
+            margin: 10px 15px 10px;
+        }
+        .Matiere{
+            display: flex;
+            margin-top: 15px;
+          
+        }
+        .tout-bwat{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .symbol-math{
+            width: 50px;
+            height: 50px;
+            margin-bottom:20px;
+            margin-left: 35%;
+        }
+        .ic-math{
+            width: 100%;
+        }
+        .Matiere-1{
+            background-color: #ffffff;
+            width: 180px;
+            height:150px;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow:0px 0px 10px #8a8484;
+            margin-left: 19px;
+           
+        }
+        .Nom-mat{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .ic-direc{
+            width: 15px;
+            height: 15px;
+            margin-left:3%;
+        }
+        .ic-direc-1{
+            width: 100%;
+        }
+       
+        .bouton{
+            width: 150px;
+            display: flex;
+            border-style: none;
+            background-color: transparent;
+            color: #0058bd;
+            margin-left: 15%;
+        }
+        .Second-principal{
+           
+            width: 100%;
+        }
+        .plum-1{
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .felx-plum-text{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .felx-text{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .plume{
+            display: flex;
+        }
+        .plum{
+            width: 100%;
+        }
+        .div-Plume{
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .Plume-1{
+            width: 100%;
+        }
+        .Elment{
+            display: flex;
+        }
+        .coul-backg-tabl{
+            background-color: #cad4e0;
+            width:60%;
+            margin-top: 20px;
+            padding:10px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .Exer-recent{
+            font-size: 25px;
+        }
+        .table-1{
+            background-color:white;
+            width: 100%;
+            border-radius: 15px;
+            height: 250px; 
+        }
+        .Faire-ex{
+            background-color: rgb(78, 154, 226);
+            color: white;
+            border-radius: 10px;
+            padding: 7px;
+           
+        }
+        .Maths{
+            background-color:#d8e5ee;
+            color: #0591f5;
+            border-radius: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .Franc{
+            color: rgb(78, 156, 0);
+            background-color: rgb(198, 250, 147);
+            border-radius: 15px;
+            border-radius: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .Phy-chim{
+            color: rgb(255, 174, 0);
+            background-color: rgb(247, 221, 165);
+            border-radius: 15px;
+            border-radius: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .svt{
+            background-color: #d8adff;
+            color:#480488;
+            border-radius: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .dificil{
+            background-color: rgb(241, 143, 143);
+            color: rgb(255, 0, 0);
+            border-radius: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+           
+        }
+       td{
+        border-bottom: 1px solid #e5e7eb;
+        font-family: Arial, sans-serif;
+       }
+       th{
+        text-align: center;
+       }
+       .Principale{
+          display: flex;
+          justify-content:center;
+          align-items: center;
+          margin-top: 20px;
+       }
+       .Second-principal{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+       }
+       .Espace-elev{
+        box-shadow: 0px 0px 15px #b8b4b4;
+        border-radius: 15px;
+        width:30%;
+        padding: 15px;
+        height: 290px;
+       }
+       .img-5{
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+       }
+       .img-elev-1{
+        width: 100%;
+       }
+       .img-elev{
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+       }
+       .connecte{
+        width: 100%;
+       }
+        .Bouton-2{
+            background-color: transparent;
+            border-style: none;
+            color: rgba(61, 61, 243);
+        }
+       .Bout-2{
+        background-color: #0d7cfa;
+        border-style: none;
+        border-radius: 8px;
+        margin-left:15px;
+        width: 90%;
+        display: flex;
+        color: white;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        font-family:sans-serif;
+        margin-top: 15px;
+       }
+       .color-espace-elev{
+        background-color: #d3e6fc;
+        margin-top: 15px;
+        border-radius: 8px;
+        width:87%;
+        margin-left: 15px;
+        padding: 10px;
+
+       }
+       .Img-I{
+        width: 15px;
+        height: 15px;
+        margin-right: 8px;
+        margin-bottom: 5px;
+       }
+       .img-I{
+        width: 100%;
+       }
+       .Dv-cree-un-compt{
+        background-color: transparent;
+        border-style: solid;
+        border-color: #0d7cfa;
+        justify-content: center;
+        align-items: center;
+        font-family:sans-serif;
+        width:90%;
+        margin-left: 20px;
+        height: 35px;
+        border-radius: 8px;
+        color: #0d7cfa;
+        margin-top: 10px;
+       }
+       .ic-facebook{
+        width: 20px;
+        height: 20px;
+       }
+       .flex-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color:#d8e5ee;
+        width: 100%;
+        border-radius: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+       }
+       .img-ic{
+        width: 100%;
+       }
+       .baton{
+        height:30px;
+        width: 2px;
+        background-color: #b1b1b1;
+        margin-left: 15px;
+        margin-right: 15px;
+       }
+       .fl-ic{
+        display: flex;
+        width: 150px;
+       }
+       .flex-icone{
+        flex: 1;
+       }
+    </style>
+</head>
+     <body>
+         <div class="nav">
+             <div class="princ-1">
+                  <div class="Elem-1">
+                        <div class="mg-text">
+                            <div class="img">
+                               <img src="https://cdn-icons-png.flaticon.com/128/8224/8224757.png" class="img-1">
+                           </div>
+                            <div class="coul-moncole"><strong>Mon Ecole</strong></div>
+                        </div>
+                 </div>
+                 <div class="Elem-2">
+                        <div class="img-text-1">
+                             <div class="img-2">
+                                <img src="https://toppng.com/uploads/preview/home-icons-blue-home-icon-blue-11553485374gfcaqpkbyp.png" alt="" class="mg-2">
+                             </div>
+                             <div class="text-color">Acceil</div>
+                        </div>
+
+                         <div class="img-text-1">
+                             <div class="img-2">
+                                <img src="https://tse4.mm.bing.net/th/id/OIP.LPTjnfqDb1CdgczbKVrG0QHaGe?r=0&pid=ImgDet&w=202&h=177&c=7&o=7&rm=3" alt="" class="mg-2">
+                             </div>
+                             <div class="text-color">Cours</div>
+                        </div>
+
+                         <div class="img-text-1">
+                             <div class="img-2">
+                                <img src="https://tse1.mm.bing.net/th/id/OIP.mveF3jzZbp8yx8hscO5DyAHaHa?r=0&pid=ImgDet&w=202&h=202&c=7&o=7&rm=3" class="mg-2">
+                             </div>
+                             <div class="text-color">Exercice</div>
+                        </div>
+
+                         <div class="img-text-1">
+                             <div class="img-2">
+                                <img src="https://tse4.mm.bing.net/th/id/OIP.NA0AHCpni7nNuk_fTiM9igHaHa?r=0&pid=ImgDet&w=202&h=202&c=7&o=7&rm=3" class="mg-2">
+                             </div>
+                             <div class="text-color">Professeurs</div>
+                        </div>
+
+                         <div class="img-text-1">
+                             <div class="img-2">
+                                <img src="https://img.freepik.com/premium-vector/blue-mail-icon_1305565-260.jpg" class="mg-2">
+                             </div>
+                             <div class="text-color">Contact</div>
+                        </div>
+                 </div>
+             </div>
+
+                 <div class="princ-2">
+                            <div class="Inp">
+                                <div class="ic-recherche">
+                                  <img src="https://cdn-icons-png.flaticon.com/128/14090/14090240.png" alt="" class="icon">
+                                </div>
+                                   <div>
+                                       <input type="search" placeholder="Rechercher..." class="inp-1">
+                                   </div>
+                            </div>
+                    
+                                <div class="selec-1">
+                                      <div class="prof-2">
+                                            <img src="https://www.bing.com/th/id/OIP.pKOEFNAdqFCKdkTiznkgJQHaHa?w=193&h=193&c=8&rs=1&qlt=90&o=6&pid=ImgAns&rm=2" class="prof-1">
+                                      </div>
+                                   <div>
+                                      <select class="select-2">
+                                          <option><strong>Conexion</strong></option>
+                                      </select>
+                                 </div>
+                         </div>
+                 
+            </div>
+         </div>
+             <div class="princ-3">
+              <div class="Elem-4">
+                  <div class="Texte">
+                      <strong>Bienvenue sur Mon Ecole</strong>
+                  </div>
+                  <p class="texte-1">Un espace d'apprentissage moderne,simple et efficace pour tous les eleves.</p>
+                  <div class="Bout-1">
+                     <div class="ic-1">
+                         <img src="https://cdn-icons-png.flaticon.com/128/10859/10859251.png" alt="" class="ic-2">
+                     </div>
+                      <div class="Bout-3">
+                          <button class="Bouton-2">Commencer maintenant</button>
+                      </div>
+                      <div class="ic-direc">
+                           <img src="https://cdn-icons-png.flaticon.com/128/15432/15432918.png" class="ic-direc-1" alt="">
+                     </div>
+                  </div>
+              </div>
+
+                <div class="img-text-3">
+                      <div class="flex-img-text">
+                           <div class="img-3">
+                              <img src="https://cdn-icons-png.flaticon.com/128/2097/2097172.png" class="img-book">
+                           </div>
+                           <div class="color-text">
+                              <strong>Nos Matieres</strong>
+                           </div>
+                      </div>
+                </div>
+                      <div class="text">
+                           <div class="color-text-2">
+                              Choisisser une matiere pour acceder aux cours et exercices.
+                           </div>
+                      </div>
+            <div class="tout-bwat">
+               <div class="Matiere">
+                    <div class="Matiere-1">
+                           <div class="symbol-math">
+                              <img src="https://cdn-icons-png.flaticon.com/128/5111/5111136.png" class="ic-math">
+                           </div>
+                           <div class="Nom-mat">
+                            <strong>Mathematiques</strong>
+                           </div>
+                           <div class="cour">
+                              <button class="bouton">
+                                  <strong>Voir les cours</strong>
+                                  <div class="ic-direc">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/15432/15432918.png" class="ic-direc-1">
+                                  </div>
+                              </button>
+                           </div>
+                    </div>
+
+                  <div class="Matiere-1">
+                           <div class="symbol-math">
+                              <img src="https://cdn-icons-png.flaticon.com/128/11046/11046763.png" class="ic-math">
+                           </div>
+                           <div class="Nom-mat">
+                            <strong>Francais</strong>
+                           </div>
+                           <div class="cour">
+                              <button class="bouton">
+                                  <strong>Voir les cours</strong>
+                                  <div class="ic-direc">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/15432/15432918.png" class="ic-direc-1">
+                                  </div>
+                              </button>
+                           </div>
+                    </div>
+                    
+                    <div class="Matiere-1">
+                           <div class="symbol-math">
+                              <img src="https://cdn-icons-png.flaticon.com/128/1050/1050427.png" class="ic-math">
+                           </div>
+                           <div class="Nom-mat">
+                            <strong>Physique-Chimie</strong>
+                           </div>
+                           <div class="cour">
+                              <button class="bouton">
+                                  <strong>Voir les cours</strong>
+                                  <div class="ic-direc">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/15432/15432918.png" class="ic-direc-1">
+                                  </div>
+                              </button>
+                           </div>
+                    </div>
+
+                    <div class="Matiere-1">
+                           <div class="symbol-math">
+                              <img src="https://cdn-icons-png.flaticon.com/128/2960/2960054.png" class="ic-math">
+                           </div>
+                           <div class="Nom-mat">
+                            <strong>SVT</strong>
+                           </div>
+                           <div class="cour">
+                              <button class="bouton">
+                                  <strong>Voir les cours</strong>
+                                  <div class="ic-direc">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/15432/15432918.png" class="ic-direc-1">
+                                  </div>
+                              </button>
+                           </div>
+                    </div>
+
+                    <div class="Matiere-1">
+                           <div class="symbol-math">
+                              <img src="https://cdn-icons-png.flaticon.com/128/17305/17305395.png" class="ic-math">
+                           </div>
+                           <div class="Nom-mat">
+                            <strong>Histoire-Geographie</strong>
+                           </div>
+                           <div class="cour">
+                              <button class="bouton">
+                                  <strong>Voir les cours</strong>
+                                  <div class="ic-direc">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/15432/15432918.png" class="ic-direc-1">
+                                  </div>
+                              </button>
+                           </div>
+                    </div>
+
+                     <div class="Matiere-1">
+                           <div class="symbol-math">
+                              <img src="https://cdn-icons-png.flaticon.com/128/8410/8410738.png" class="ic-math">
+                           </div>
+                           <div class="Nom-mat">
+                            <strong>Informatique</strong>
+                           </div>
+                           <div class="cour">
+                              <button class="bouton">
+                                  <strong>Voir les cours</strong>
+                                  <div class="ic-direc">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/15432/15432918.png" class="ic-direc-1">
+                                  </div>
+                              </button>
+                           </div>
+                        </div> 
+               </div>
+            </div> 
+            <div class="Principale">
+                     <div class="Second-principal">
+                          <div class="coul-backg-tabl">
+                                 <div class="felx-plum-text">
+                                       <div class="felx-text">
+                                          <div class="div-Plume">
+                                               <img src="https://cdn-icons-png.flaticon.com/128/2015/2015126.png" class="Plume-1">
+                                           </div>
+                                           <div class="Exer-recent">
+                                               <strong>Exercices recents</strong>
+                                           </div>
+                                       </div>
+                                         <div class="cour">
+                                              <button class="bouton">
+                                                 <strong>Voir les cours</strong>
+                                                  <div class="ic-direc">
+                                                       <img src="https://cdn-icons-png.flaticon.com/128/15432/15432918.png" class="ic-direc-1">
+                                                  </div>
+                                             </button>
+                                         </div>
+                                  </div>
+
+                                 <div class="tabl">
+                                        <table class="table-1">
+                                               <thead>
+                                                     <tr>
+                                                          <th>Matiere</th>
+                                                          <th>Titre de l'exercice</th>
+                                                          <th>Niveau</th>
+                                                          <th>Action</th>
+                                                     </tr>
+                                               </thead>
+                                                <tbody>
+                                                      <tr>
+                                                          <td><span class="Maths">Mathematique</span></td>
+                                                          <td><span>Calculs sur les fractions</span></td>
+                                                          <td><span class="Franc">Facile</span></td>
+                                                          <td><span class="Faire-ex">Faire  l'exercice</span></td>
+                                                      </tr>
+
+                                                      <tr>
+                                                          <td><span class="Franc">Francais</span></td>
+                                                          <td><span>Analyse de texte</span></td>
+                                                          <td><span class="Phy-chim">Moyen</span></td>
+                                                          <td><span class="Faire-ex">Faire  l'exercice</span></td>
+                                                      </tr>
+
+                                                      <tr>
+                                                          <td><span class="Phy-chim">Pysique-Chimie</span></td>
+                                                          <td><span>Les etats de la matiere</span></td>
+                                                          <td><span class="dificil">Dificile</span></td>
+                                                          <td><span class="Faire-ex">Faire  l'exercice</span></td>
+                                                      </tr>
+
+                                                      <tr>
+                                                          <td><span class="svt">SVT</span></td>
+                                                          <td><span>Le systeme nerveu</span></td>
+                                                          <td><span class="Phy-chim">Moyen</span></td>
+                                                          <td><span class="Faire-ex">Faire  l'exercice</span></td>
+                                                      </tr>
+                                                </tbody>
+                                        </table>
+                                 </div>
+                           </div>
+                                <div class="Espace-elev">
+                                         <div class="flex-img-text">
+                                             <div class="img-5">
+                                                 <img src="https://cdn-icons-png.flaticon.com/128/12571/12571834.png" class="img-elev-1">
+                                             </div>
+                                               <div class="color-text">
+                                                  <strong>Espace Eleve</strong>
+                                              </div>
+                                         </div>
+                                   <div class="text">
+                                      <div class="color-text-2">
+                                         Accedez a votre espace personel pour consulter vos notes,vos devoir et votre progression.
+                                      </div>
+                                  </div>
+                                   <div class="Dv-bout">
+                                       <button class="Bout-2">
+                                            <div class="img-elev">
+                                                  <img src="https://cdn-icons-png.flaticon.com/128/9634/9634050.png" class="connecte">
+                                            </div>
+                                              <span>Se connecter</span>
+                                       </button>
+                                   </div>
+                                     <div class="color-espace-elev">
+                                          <div class="flex-img-text">
+                                             <div class="Img-I">
+                                                 <img src="https://cdn-icons-png.flaticon.com/128/9183/9183394.png" class="img-I">
+                                             </div>
+                                               <div class="color-text">
+                                                  <strong>Nouvau ici ?</strong>
+                                              </div>
+                                         </div>
+                                            <div class="text">
+                                              <div class="color-text-3">
+                                                    Cree votre compte pour acceder a toutes les fonctionalites de la platforme.
+                                               </div>
+                                          </div>
+                                           <div>
+                                                 <button class="Dv-cree-un-compt">
+                                                      Cree un compte 
+                                               </button>
+                                         </div>
+                                    </div>
+                             </div>
+                     </div>
+            </div> 
+            <div class="flex-footer">
+                    <div class="felx-mon-ecole">
+                          <div class="mg-text">
+                            <div class="img">
+                               <img src="https://cdn-icons-png.flaticon.com/128/8224/8224757.png" class="img-1">
+                           </div>
+                            <div class="coul-moncole"><strong>Mon Ecole</strong></div>
+                            <div class="baton"></div>
+                            <div>
+                                <span>Ensemble pour un meilleur avenir</span>
+                            </div>
+                        </div>
+                    </div>
+                  <div class="fl-ic">
+                      <div class="flex-icone">
+                          <div class="ic-facebook">
+                            <img src="https://cdn-icons-png.flaticon.com/128/13051/13051733.png" class="img-ic">
+                          </div>
+                    </div>
+
+                    <div class="flex-icone">
+                          <div class="ic-facebook">
+                            <img src="https://cdn-icons-png.flaticon.com/128/3670/3670211.png" class="img-ic">
+                          </div>
+                    </div>
+
+                    <div class="flex-icone">
+                          <div class="ic-facebook">
+                            <img src="https://cdn-icons-png.flaticon.com/128/2673/2673902.png" class="img-ic">
+                          </div>
+                    </div>
+
+                    <div class="flex-icone">
+                          <div class="ic-facebook">
+                            <img src="https://cdn-icons-png.flaticon.com/128/14047/14047225.png" class="img-ic">
+                          </div>
+                    </div>
+                  </div>
+            </div> 
+   </body>             
+</html>
